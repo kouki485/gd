@@ -1,234 +1,242 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>副収入で月50万円を目指す - LINE無料登録</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <!-- LP画像をそのまま表示 -->
-      <img src="lp2.png" alt="副収入LP" class="lp-image">
-      
-      <!-- クリック可能なLINE登録ボタンエリア -->
-      <!-- 1つ目のLINE登録ボタン（上部） -->
-      <a href="https://ideaofficial.link-lc.com/adoptin/1/" class="everline_link" target="_blank" rel="noopener noreferrer">
-        <img src="line-button.png" alt="LINE登録ボタン" class="line-button line-button-1">
-      </a>
-      
-      <!-- 2つ目のLINE登録ボタン（中部） -->
-      <a href="https://ideaofficial.link-lc.com/adoptin/1/" class="everline_link" target="_blank" rel="noopener noreferrer">
-        <img src="line-button.png" alt="LINE登録ボタン" class="line-button line-button-2">
-      </a>
-      
-      <!-- 3つ目のLINE登録ボタン（下部1） -->
-      <a href="https://ideaofficial.link-lc.com/adoptin/1/" class="everline_link" target="_blank" rel="noopener noreferrer">
-        <img src="line-button.png" alt="LINE登録ボタン" class="line-button line-button-3">
-      </a>
-    </div>
-    
-    <script type='text/javascript' src='https://ideaofficial.link-lc.com/adoptin/js/1/access.js'></script>
-    <script src="script.js"></script>
-    <!-- elink計測スクリプトを先に読み込み -->
-    <!-- CV計測用スクリプト（友だち登録後の誘導LP用） -->
-    <script type='text/javascript' src='https://ideaofficial.link-lc.com/js/everline_cvset.js'></script>
-    <!-- 登録完了計測用スクリプト -->
-    <script type='text/javascript' src='https://ideaofficial.link-lc.com/js/everline_cvget.js'></script>
-    <script>
-      // elink計測スクリプトの初期化完了を待つ
-      function waitForElink(callback) {
-        if (typeof window.elink !== 'undefined' || typeof window.adoptin !== 'undefined') {
-          callback();
-        } else {
-          setTimeout(() => waitForElink(callback), 100);
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>副収入で月50万円を目指す - LINE無料登録</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- LP画像をそのまま表示 -->
+    <img src="lp2.png" alt="副収入LP" class="lp-image">
+
+    <!-- クリック可能なLINE登録ボタンエリア -->
+    <!-- 1つ目のLINE登録ボタン（上部） -->
+    <a href="https://ideaofficial.link-lc.com/adoptin/1/" class="everline_link" target="_blank"
+      rel="noopener noreferrer">
+      <img src="line-button.png" alt="LINE登録ボタン" class="line-button line-button-1">
+    </a>
+
+    <!-- 2つ目のLINE登録ボタン（中部） -->
+    <a href="https://ideaofficial.link-lc.com/adoptin/1/" class="everline_link" target="_blank"
+      rel="noopener noreferrer">
+      <img src="line-button.png" alt="LINE登録ボタン" class="line-button line-button-2">
+    </a>
+
+    <!-- 3つ目のLINE登録ボタン（下部1） -->
+    <a href="https://ideaofficial.link-lc.com/adoptin/1/" class="everline_link" target="_blank"
+      rel="noopener noreferrer">
+      <img src="line-button.png" alt="LINE登録ボタン" class="line-button line-button-3">
+    </a>
+  </div>
+
+  <script type='text/javascript' src='https://ideaofficial.link-lc.com/adoptin/js/1/access.js'></script>
+  <script type='text/javascript' src='https://ideaofficial.link-lc.com/adoptin/js/5/access.js'></script>
+
+  <script src="script.js"></script>
+  <!-- elink計測スクリプトを先に読み込み -->
+  <!-- CV計測用スクリプト（友だち登録後の誘導LP用） -->
+  <script type='text/javascript' src='https://ideaofficial.link-lc.com/js/everline_cvset.js'></script>
+  <!-- 登録完了計測用スクリプト -->
+  <script type='text/javascript' src='https://ideaofficial.link-lc.com/js/everline_cvget.js'></script>
+  <script>
+    // elink計測スクリプトの初期化完了を待つ
+    function waitForElink(callback) {
+      if (typeof window.elink !== 'undefined' || typeof window.adoptin !== 'undefined') {
+        callback();
+      } else {
+        setTimeout(() => waitForElink(callback), 100);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      console.log('🔍 elink計測スクリプト開始');
+
+      // 現在のURLを確認
+      console.log('🌐 現在のURL:', window.location.href);
+      console.log('🔗 URLパラメータ部分:', window.location.search);
+
+      const params = new URLSearchParams(window.location.search);
+
+      // 全てのパラメータを確認
+      console.log('📋 全てのURLパラメータ:');
+      for (let [key, value] of params) {
+        console.log(`  ${key}: ${value}`);
       }
 
-      document.addEventListener('DOMContentLoaded', function () {
-        console.log('🔍 elink計測スクリプト開始');
-        
-        // 現在のURLを確認
-        console.log('🌐 現在のURL:', window.location.href);
-        console.log('🔗 URLパラメータ部分:', window.location.search);
-        
-        const params = new URLSearchParams(window.location.search);
-        
-        // 全てのパラメータを確認
-        console.log('📋 全てのURLパラメータ:');
-        for (let [key, value] of params) {
-          console.log(`  ${key}: ${value}`);
-        }
-        
-        const euid = params.get("euid");           // euidパラメータ
-        const uid = params.get("uid");             // uidパラメータ
-        const elinktag = params.get("elinktag");   // elinktagパラメータ
-        const adCode = params.get("AD_CODE");      // 広告コード（登録者数計測に必須）
-        
-        console.log('🆔 euid:', euid);
-        console.log('🆔 uid:', uid);
-        console.log('🏷️ elinktag:', elinktag);
-        console.log('📊 AD_CODE:', adCode);
-    
-        const baseUrl = "https://ideaofficial.link-lc.com/adoptin/1/";
-        
-        // URLにパラメータを追加する共通関数
-        function buildUrlWithParams(baseUrl, params) {
-          const url = new URL(baseUrl);
-          Object.entries(params).forEach(([key, value]) => {
-            if (value !== null && value !== undefined && value !== '') {
-              url.searchParams.append(key, value);
-            }
-          });
-          return url.toString();
-        }
-    
-        const links = document.querySelectorAll("a.everline_link");
-        console.log('🔗 見つかったリンク数:', links.length);
-        
-        // elink計測スクリプトの初期化完了を待ってからリンクを書き換え
-        waitForElink(() => {
-          console.log('✅ elink計測スクリプト初期化完了');
-          
-          // BOT IDを確認
-          const currentBotId = checkBotId();
-          console.log('🤖 使用中のBOT ID:', currentBotId);
-          
-          // リンククリック時の軽量な計測を設定する関数
-          function setupClickTracking(link, url) {
-            link.addEventListener('click', function(e) {
-              console.log('🔥 リンククリック検出:', url);
-              console.log('📱 デバイス情報:', navigator.userAgent);
-              
-              // モバイル環境チェック
-              const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-              console.log('📱 モバイル環境:', isMobile ? 'Yes' : 'No');
-              
-              // クリック計測のみ実行（登録完了計測は実行しない）
-              try {
-                // 1. クリック計測情報をLocalStorageに保存
-                const clickData = {
-                  timestamp: Date.now(),
-                  adCode: adCode,
-                  elinktag: elinktag,
-                  euid: euid,
-                  uid: uid,
-                  url: url,
-                  userAgent: navigator.userAgent,
-                  isMobile: isMobile,
-                  event: 'click'
-                };
-                localStorage.setItem('elink_click_' + Date.now(), JSON.stringify(clickData));
-                console.log('📊 クリック情報をlocalStorageに保存');
-                
-                // 2. 軽量なクリック計測ピクセルのみ送信
-                sendClickPixel(adCode, elinktag, euid, uid);
-                
-                console.log('✅ クリック計測完了（登録完了計測は実際の登録後に実行）');
-                
-              } catch (error) {
-                console.error('❌ クリック時計測エラー:', error);
-              }
-            });
+      const euid = params.get("euid");           // euidパラメータ
+      const uid = params.get("uid");             // uidパラメータ
+      const elinktag = params.get("elinktag");   // elinktagパラメータ
+      const adCode = params.get("AD_CODE");      // 広告コード（登録者数計測に必須）
+
+      console.log('🆔 euid:', euid);
+      console.log('🆔 uid:', uid);
+      console.log('🏷️ elinktag:', elinktag);
+      console.log('📊 AD_CODE:', adCode);
+
+      const baseUrl = "https://ideaofficial.link-lc.com/adoptin/1/";
+
+      // URLにパラメータを追加する共通関数
+      function buildUrlWithParams(baseUrl, params) {
+        const url = new URL(baseUrl);
+        Object.entries(params).forEach(([key, value]) => {
+          if (value !== null && value !== undefined && value !== '') {
+            url.searchParams.append(key, value);
           }
-          
-          // uid/euid/elinktag/AD_CODEパラメータでURL構築
-          const urlParams = {};
-          
-          // AD_CODEパラメータの処理（登録者数計測に必須）
-          if (adCode) {
-            urlParams.AD_CODE = adCode;
-            console.log('✅ AD_CODEパラメータを使用:', adCode);
-          } else {
-            console.log('⚠️ AD_CODEパラメータなし（登録者数計測に影響する可能性）');
-          }
-          
-          // elinktagパラメータの処理
-          if (elinktag) {
-            urlParams.elinktag = elinktag;
-            console.log('✅ elinktagパラメータを使用:', elinktag);
-          } else {
-            urlParams.elinktag = '3viiRysL';  // デフォルト値
-            console.log('⚠️ elinktagデフォルト値を使用: 3viiRysL');
-          }
-          
-          // euidパラメータの処理
-          if (euid) {
-            urlParams.euid = euid;
-            console.log('✅ euidパラメータを使用:', euid);
-          } else {
-            urlParams.euid = '###uid###';
-            console.log('⚠️ euidデフォルト値を使用: ###uid###');
-          }
-          
-          // uidパラメータの処理
-          if (uid) {
-            urlParams.uid = uid;
-            console.log('✅ uidパラメータを使用:', uid);
-          } else {
-            console.log('⚠️ uidパラメータなし');
-          }
-          
-          const finalUrl = buildUrlWithParams(baseUrl, urlParams);
-          console.log('✅ 最終URL構築完了 → ', finalUrl);
-          
-          links.forEach(link => {
-            link.href = finalUrl;
-            link.style.pointerEvents = "auto";
-            link.style.opacity = "1";
-            setupClickTracking(link, finalUrl);
-          });
-          
-          console.log('🎯 elink計測スクリプト完了');
         });
-        
-        // 軽量なクリック計測ピクセル送信関数
-        function sendClickPixel(adCode, elinktag, euid, uid) {
-          const pixelImg = document.createElement('img');
-          pixelImg.style.display = 'none';
-          pixelImg.style.width = '1px';
-          pixelImg.style.height = '1px';
-          
-          let trackingUrl = 'https://ideaofficial.link-lc.com/adoptin/1/click.gif?';
-          const params = new URLSearchParams();
-          
-          if (adCode) params.append('AD_CODE', adCode);
-          if (elinktag) params.append('elinktag', elinktag);
-          if (euid) params.append('euid', euid);
-          if (uid) params.append('uid', uid);
-          params.append('event', 'click');
-          params.append('_t', Date.now().toString());
-          
-          pixelImg.src = trackingUrl + params.toString();
-          document.body.appendChild(pixelImg);
-          
-          console.log('📊 クリック計測ピクセル送信:', pixelImg.src);
-          
-          // 3秒後に削除
-          setTimeout(() => {
-            if (pixelImg.parentNode) {
-              pixelImg.parentNode.removeChild(pixelImg);
-            }
-          }, 3000);
-        }
-        
-        // BOT ID確認関数
-        function checkBotId() {
-          // 現在のスクリプトソースからBOT IDを確認
-          const scripts = document.querySelectorAll('script[src*="ideaofficial.link-lc.com/adoptin/js/"]');
-          let botId = '1'; // デフォルト値
-          
-          scripts.forEach(script => {
-            const match = script.src.match(/\/adoptin\/js\/(\d+)\/access\.js/);
-            if (match) {
-              botId = match[1];
+        return url.toString();
+      }
+
+      const links = document.querySelectorAll("a.everline_link");
+      console.log('🔗 見つかったリンク数:', links.length);
+
+      // elink計測スクリプトの初期化完了を待ってからリンクを書き換え
+      waitForElink(() => {
+        console.log('✅ elink計測スクリプト初期化完了');
+
+        // BOT IDを確認
+        const currentBotId = checkBotId();
+        console.log('🤖 使用中のBOT ID:', currentBotId);
+
+        // リンククリック時の軽量な計測を設定する関数
+        function setupClickTracking(link, url) {
+          link.addEventListener('click', function (e) {
+            console.log('🔥 リンククリック検出:', url);
+            console.log('📱 デバイス情報:', navigator.userAgent);
+
+            // モバイル環境チェック
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            console.log('📱 モバイル環境:', isMobile ? 'Yes' : 'No');
+
+            // クリック計測のみ実行（登録完了計測は実行しない）
+            try {
+              // 1. クリック計測情報をLocalStorageに保存
+              const clickData = {
+                timestamp: Date.now(),
+                adCode: adCode,
+                elinktag: elinktag,
+                euid: euid,
+                uid: uid,
+                url: url,
+                userAgent: navigator.userAgent,
+                isMobile: isMobile,
+                event: 'click'
+              };
+              localStorage.setItem('elink_click_' + Date.now(), JSON.stringify(clickData));
+              console.log('📊 クリック情報をlocalStorageに保存');
+
+              // 2. 軽量なクリック計測ピクセルのみ送信
+              sendClickPixel(adCode, elinktag, euid, uid);
+
+              console.log('✅ クリック計測完了（登録完了計測は実際の登録後に実行）');
+
+            } catch (error) {
+              console.error('❌ クリック時計測エラー:', error);
             }
           });
-          
-          console.log('🤖 検出されたBOT ID:', botId);
-          return botId;
         }
+
+        // uid/euid/elinktag/AD_CODEパラメータでURL構築
+        const urlParams = {};
+
+        // AD_CODEパラメータの処理（登録者数計測に必須）
+        if (adCode) {
+          urlParams.AD_CODE = adCode;
+          console.log('✅ AD_CODEパラメータを使用:', adCode);
+        } else {
+          console.log('⚠️ AD_CODEパラメータなし（登録者数計測に影響する可能性）');
+        }
+
+        // elinktagパラメータの処理
+        if (elinktag) {
+          urlParams.elinktag = elinktag;
+          console.log('✅ elinktagパラメータを使用:', elinktag);
+        } else {
+          urlParams.elinktag = '3viiRysL';  // デフォルト値
+          console.log('⚠️ elinktagデフォルト値を使用: 3viiRysL');
+        }
+
+        // euidパラメータの処理
+        if (euid) {
+          urlParams.euid = euid;
+          console.log('✅ euidパラメータを使用:', euid);
+        } else {
+          urlParams.euid = '###uid###';
+          console.log('⚠️ euidデフォルト値を使用: ###uid###');
+        }
+
+        // uidパラメータの処理
+        if (uid) {
+          urlParams.uid = uid;
+          console.log('✅ uidパラメータを使用:', uid);
+        } else {
+          console.log('⚠️ uidパラメータなし');
+        }
+
+        const finalUrl = buildUrlWithParams(baseUrl, urlParams);
+        console.log('✅ 最終URL構築完了 → ', finalUrl);
+
+        links.forEach(link => {
+          link.href = finalUrl;
+          link.style.pointerEvents = "auto";
+          link.style.opacity = "1";
+          setupClickTracking(link, finalUrl);
+        });
+
+        console.log('🎯 elink計測スクリプト完了');
       });
-    </script>
+
+      // 軽量なクリック計測ピクセル送信関数
+      function sendClickPixel(adCode, elinktag, euid, uid) {
+        const pixelImg = document.createElement('img');
+        pixelImg.style.display = 'none';
+        pixelImg.style.width = '1px';
+        pixelImg.style.height = '1px';
+
+        let trackingUrl = 'https://ideaofficial.link-lc.com/adoptin/1/click.gif?';
+        const params = new URLSearchParams();
+
+        if (adCode) params.append('AD_CODE', adCode);
+        if (elinktag) params.append('elinktag', elinktag);
+        if (euid) params.append('euid', euid);
+        if (uid) params.append('uid', uid);
+        params.append('event', 'click');
+        params.append('_t', Date.now().toString());
+
+        pixelImg.src = trackingUrl + params.toString();
+        document.body.appendChild(pixelImg);
+
+        console.log('📊 クリック計測ピクセル送信:', pixelImg.src);
+
+        // 3秒後に削除
+        setTimeout(() => {
+          if (pixelImg.parentNode) {
+            pixelImg.parentNode.removeChild(pixelImg);
+          }
+        }, 3000);
+      }
+
+      // BOT ID確認関数
+      function checkBotId() {
+        // 現在のスクリプトソースからBOT IDを確認
+        const scripts = document.querySelectorAll('script[src*="ideaofficial.link-lc.com/adoptin/js/"]');
+        let botId = '1'; // デフォルト値
+
+        scripts.forEach(script => {
+          const match = script.src.match(/\/adoptin\/js\/(\d+)\/access\.js/);
+          if (match) {
+            botId = match[1];
+          }
+        });
+
+        console.log('🤖 検出されたBOT ID:', botId);
+        return botId;
+      }
+    });
+  </script>
 </body>
-</html> 
+
+</html>
